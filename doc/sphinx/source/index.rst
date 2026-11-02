@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Et_info_indus_tutorial documentation
-====================================
+========================================
 
 Add your content using ``reStructuredText`` syntax. See the
 `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
