@@ -1,0 +1,178 @@
+/* Force line wraping in code instead of horizontal scrolling */
+
+pre {
+
+    white-space: pre-wrap !important;
+
+    word-break: break-all;
+
+}
+
+
+/* Add the possibility to underline text */
+
+.underline {
+
+    text-decoration: underline;
+
+}
+
+
+/* This allows the content to use most of the screen */
+
+@media (min-width: 1200px) {
+
+    .wy-nav-content {
+
+        max-width: 95%;
+
+        /* This allows the content to use most of the screen */
+
+    }
+
+}
+
+
+/** Allow caption from toctree to wrap nicely in sidebar */
+
+.wy-menu .caption-text {
+
+    white-space: normal;
+
+    word-wrap: break-word;
+
+    overflow-wrap: break-word;
+
+    line-height: 1.1;
+
+    /* Increase line height to prevent overlap */
+
+    display: block;
+
+    /* Ensure the element takes up full width */
+
+}
+
+
+/* Style for the forbidden methods table */
+
+table.forbidden-methods-table {
+
+    width: -moz-fit-content !important;
+
+    width: fit-content !important;
+
+    table-layout: auto !important;
+
+    margin-left: auto !important;
+
+    margin-right: auto !important;
+
+    background-color: white !important;
+
+    border: 12px solid black !important;
+
+    border-collapse: collapse;
+
+}
+
+
+table.forbidden-methods-table col {
+
+    width: auto !important;
+
+}
+
+
+table.forbidden-methods-table tbody tr td {
+
+    border: 12px solid black !important;
+
+    padding: 30px 40px !important;
+
+    vertical-align: middle !important;
+
+    background-color: white !important;
+
+}
+
+
+/* Cells can contain a paragraph that would otherwise break vertical centering */
+
+table.forbidden-methods-table tbody tr td>p {
+
+    margin: 0 !important;
+
+}
+
+
+table.forbidden-methods-table tbody tr td:first-child p {
+
+    font-size: 400% !important;
+
+    text-align: center !important;
+
+    font-weight: bold !important;
+
+}
+
+
+table.forbidden-methods-table tbody tr td:last-child {
+
+    text-align: center !important;
+
+}
+
+
+.text-bold-black-on-red {
+
+    font-weight: bold !important;
+
+    color: black !important;
+
+    background-color: red !important;
+
+}
+
+
+/* Comparison table whose first row (ok/nok symbols) is shown 400% bigger */
+
+/* docutils turns the RST class "list-comparison-ok_nok" into "list-comparison-ok-nok" in the HTML */
+
+table.list-comparison-ok-nok {
+
+    width: fit-content !important;
+
+    margin-left: auto !important;
+
+    margin-right: auto !important;
+
+    border-collapse: collapse;
+
+}
+
+
+table.list-comparison-ok-nok tbody tr:first-child>td,
+
+table.list-comparison-ok-nok tbody tr:first-child>th {
+
+    font-size: 400% !important;
+
+    text-align: center !important;
+
+    font-weight: bold !important;
+
+}
+
+
+/* The theme sets an absolute font-size on td>p, so it must inherit the 400% from the cell */
+
+table.list-comparison-ok-nok tbody tr:first-child>td>p,
+
+table.list-comparison-ok-nok tbody tr:first-child>th>p {
+
+    font-size: inherit !important;
+
+    line-height: 1.2 !important;
+
+}
